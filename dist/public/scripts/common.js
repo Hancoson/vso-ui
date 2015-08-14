@@ -3,7 +3,7 @@
  *@date 2015-01-22
  **/
 jQuery(function () {
-    var treeBearUI = {
+    var VSOUI = {
         init: function () {
             this.eventHandler();
             if ($("#J_sildNav").length > 0) {
@@ -12,7 +12,7 @@ jQuery(function () {
             this.mobileNav();
         }
     };
-    jQuery.extend(treeBearUI, {
+    jQuery.extend(VSOUI, {
         eventHandler: function () {
             for (var i = 0; i < $("pre").length; i++) {
                 var _html = $("pre:eq( " + i + ")").html();
@@ -61,5 +61,5 @@ jQuery(function () {
         }
 
     });
-    treeBearUI.init();
+    VSOUI.init();
 });
