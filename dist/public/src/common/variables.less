@@ -1,0 +1,248 @@
+/* 
+ *@name: TreeBearUI-Framework - v0.0.1
+ *@author: Hancoson <hancoson@163.com>
+*/
+
+// Component:		  Variables变量
+//
+// Description:		Define all variables
+//
+// Global variables
+// =============================================================================
+
+// =============================================================================
+// Black - White - Gray
+// -----------------------------------------------------------------------------
+
+@black:           #000;
+@white:           #fff;
+
+@gray-darker:     lighten(@black, 13.5%); // #222
+@gray-dark:        lighten(@black, 20%);   // #333
+@gray: 				lighten(@black, 33.5%); // #555
+@gray-light:      	lighten(@black, 60%);   // #999
+@gray-lighter:     lighten(@black, 93.5%); // #eee
+@gray-white:     lighten(@black, 100%); // #fff
+
+// =============================================================================
+// Brand Colors
+// -----------------------------------------------------------------------------
+
+@global-primary:	    #0e90d2; // #157EFB; //#428bca;
+@global-secondary:    lighten(@global-primary, 15%);
+@global-success:	    #5eb95e; // #53D76A; //#5cb85c;
+@global-warning:	    #F37B1D; // #FD9426; // #f0ad4e;
+@global-danger:		    #dd514c; // #FC3159; //#da314b;
+@global-info:         @global-secondary;
+
+
+@global-primary:	    #0e90d2; // #157EFB; //#428bca;
+@global-secondary:    lighten(@global-primary, 15%);
+@global-success:	    #5eb95e; // #53D76A; //#5cb85c;
+@global-warning:	    #F37B1D; // #FD9426; // #f0ad4e;
+@global-danger:		    #dd514c; // #FC3159; //#da314b;
+@global-info:         @global-secondary;
+
+
+// One
+// -----------------------------------------------------------------------------
+
+@one-primary: #15afef;
+
+// =============================================================================
+// body
+// -----------------------------------------------------------------------------
+
+@body-bg:               @white;
+@text-color:            @gray-dark;
+
+// =============================================================================
+// Links
+// -----------------------------------------------------------------------------
+
+@link-color:              @global-primary;
+@link-hover-color:        darken(@link-color, 15%);
+
+
+// =============================================================================
+// Backgrounds & Borders
+// -----------------------------------------------------------------------------
+
+@global-background:				@white;
+@global-border:					  #ddd;
+
+
+// Typography
+// =============================================================================
+
+// =============================================================================
+// Font family
+// -----------------------------------------------------------------------------
+
+@font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+
+// =============================================================================
+// Font
+// -----------------------------------------------------------------------------
+
+@global-font-size:				14px; //14px
+@global-line-height:			1.2;
+
+
+@font-size-xs:            @global-font-size - 4; // 10px
+@font-size-sm:            @global-font-size - 2; // 12px
+//@font-size-default:     @global-font-size;       // 14px
+@font-size-lg:            @global-font-size + 2; // 16px
+@font-size-xl:            @global-font-size + 4; // 18px
+@font-size-xxl:           @global-font-size * 2;   // 24px
+
+@font-line-height:        @global-line-height;
+
+@font-weight:             400;
+
+// =============================================================================
+// Z-index
+// -----------------------------------------------------------------------------
+
+@global-z-index:		        1000;
+
+@z-index-topbar-fixed:      @global-z-index;
+@z-index-datepicker:        @global-z-index;
+@z-index-sticky:            @global-z-index + 10;
+@z-index-dropdown:          @global-z-index + 20;
+@z-index-popover:           @global-z-index + 30;
+@z-index-offcanvas:         @global-z-index + 90;
+@z-index-dimmer:            @global-z-index + 100;
+@z-index-modal:             @global-z-index + 110;
+@z-index-pureview:          @global-z-index + 120;
+@z-index-nprogress:         @global-z-index + 1000;
+
+// Widgets
+@z-index-navbar:            @global-z-index + 10;
+@z-index-header-fixed:      @global-z-index + 10;
+@z-index-gotop-fixed:       @global-z-index + 40;
+@z-index-menu:              @global-z-index + 50;
+
+// Responsive variables
+// =============================================================================
+
+// Table
+//----------------------------------------------------------------------------
+
+@table-cell-padding:      8px;
+@table-bg:                      @global-background; //#fff
+@table-bg-header:		 #eee;
+@table-bg-striped:         #f9f9f9;
+@table-bg-hover:           #e9e9e9;// #fbf6e9;
+@table-bg-active:          #ffd;
+@table-border-color:       #ddd; // table and cell border
+
+// =============================================================================
+// Buttons
+//----------------------------------------------------------------------------
+
+@btn-font-weight:                normal;
+@btn-line-height:                @global-line-height;
+@btn-font-size:                  @global-font-size;
+
+@btn-default-color:              @gray-dark;
+@btn-default-bg:                 #e6e6e6;
+@btn-default-border:             @btn-default-bg;
+@btn-default-hover: 				darken(@btn-default-bg, 15%);
+
+
+@btn-primary-color:              @white;
+@btn-primary-bg:                 @global-primary;
+@btn-primary-border:             @btn-primary-bg;
+@btn-primary-hover: 				darken(@btn-primary-bg, 15%);
+
+@btn-secondary-color:            @white;
+@btn-secondary-bg:               @global-secondary;
+@btn-secondary-border:        @global-secondary;
+@btn-secondary-border:        @btn-secondary-bg;
+@btn-secondary-hover: 		darken(@btn-secondary-bg, 15%);
+
+@btn-success-color:              @white;
+@btn-success-bg:                 @global-success;
+@btn-success-border:             @global-success;
+@btn-success-hover: 				darken(@btn-success-bg, 15%);
+
+@btn-warning-color:              @white;
+@btn-warning-bg:                 @global-warning;
+@btn-warning-border:             @btn-warning-bg;
+@btn-warning-hover: 				darken(@btn-warning-bg, 15%);
+
+@btn-danger-color:               @white;
+@btn-danger-bg:                  @global-danger;
+@btn-danger-border:              @btn-danger-bg;
+@btn-danger-hover: 				darken(@btn-danger-bg, 15%);
+
+@btn-link-disabled-color:        @gray-light;
+
+@btn-xs-font-size:      @font-size-xs;
+@btn-sm-font-size:      @font-size-sm;
+@btn-lg-font-size:      @font-size-lg;
+@btn-xl-font-size:      2rem;
+
+// =============================================================================
+// Border radius
+// -----------------------------------------------------------------------------
+
+@global-radius:         0;
+@radius-normal:         4px;
+@radius-lg:             10px;
+@radius-sm:             1px;
+
+@global-rounded:        1000px;
+@global-square:           0;
+
+
+// =============================================================================
+// Grid
+// -----------------------------------------------------------------------------
+
+@grid-padding:          15px;
+@grid-padding-sm:       @grid-padding * 0.75;
+@grid-padding-mm:       @grid-padding * 0.5;
+
+
+@grid-max-width:        1200px;
+
+@screen-lg-max:         @grid-max-width;  //大屏幕（大桌面显示器，小于等于 1200px）
+@screen-md-max:         960px;  //中等屏幕（桌面显示器，小于等于 960px）
+@screen-sm-max:         768px;  //平板屏幕（平板、手机，小于等于 768px）
+@screen-mm-max:         640px;  //手机屏幕（手机，小于等于 640px）
+
+
+// =============================================================================
+// Forms
+// -----------------------------------------------------------------------------
+@form-font-size:        @global-font-size;
+@form-line-height:      1.2;
+@form-font-size-sm:     @font-size-sm;
+@form-font-size-lg:     @font-size-lg;
+
+@input-padding:         0.65em;
+@input-padding-sm:      0.65em*1.25;
+@input-padding-lg:      0.65em*0.75;
+
+@input-margin-bottom:     1.5em;
+@input-margin-left:     3em;
+
+
+@input-bg:              #fff;
+@input-focus-bg:        #fefffe;
+@input-bg-disabled:     @gray-lighter;
+@input-color:           @gray;
+@input-border:          #ccc;
+
+@input-border-radius:   @radius-normal;
+@input-border-focus:    @global-secondary;
+@input-color-placeholder: @gray-light;
+
+@legend-color:          @gray-dark;
+@legend-border-color:   #e5e5e5;
+
+@form-select-height:    @form-font-size * @form-line-height + @form-font-size * 0.5 * 2;
+@form-select-height-lg: @form-font-size-lg * @form-line-height + @form-font-size-lg * 0.5 * 2;
+@form-select-height-sm: @form-font-size-sm * @form-line-height + @form-font-size-sm * 0.5 * 2;

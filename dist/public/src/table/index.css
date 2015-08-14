@@ -1,0 +1,20 @@
+/*
+@ table
+*/
+.ui-table{
+    border-collapse: collapse;
+}
+.ui-table tr{
+    border: 1px solid #dcdcdc;
+}
+.ui-table tr th{
+    background: #e5e5e5;
+    border: 1px solid #dcdcdc;
+    padding: 5px 0
+}
+.ui-table tr td{
+    line-height: 1.4;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    padding: 5px 0
+}

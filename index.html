@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="public/styles/prettify.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles/common.css">
+    <link rel="stylesheet" href="public/tools/font-awesome.min.css">
+    <link rel="stylesheet" href="public/src/combo.css"/>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="public/src/combo.js"></script>
+    <!-- support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="public/scripts/html5shiv.min.js"></script>
+    <script src="public/scripts/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title>
+        TreeBearUI首页
+    </title>
+</head>
+<body>
+<header class="header--fixed">
+    <div class="container">
+        <div class="tbui-sm-12">
+            <div class="logo"><a href="/">TreeBrearUI</a></div>
+            <a class="mobile_navBtn fr" id="J_mobNav_btn" href="javascript:void(0)">
+                <i class="icon-align-justify"></i>
+            </a>
+            <ul id="J_nav">
+                <a href="index.html">
+                    <li class="act">首页</li>
+                </a>
+                <a href="css.html">
+                    <li>CSS</li>
+                </a>
+                <a href="javascript.html">
+                    <li>Javascript插件</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="bs-docs-header">
+        <div class="container">
+            <div class="tbui-sm-12">
+                <h1>起步</h1>
+
+                <p>简要介绍 TreeBear UI，以及如何使用等等。</p>
+            </div>
+        </div>
+    </div>
+    <div class="container clearfix" style="margin-bottom:30px">
+        <div class="tbui-sm-12">
+            <div class="bs-docs-section">
+                <h1 id="tables" class="page-header">介绍</h1>
+                <h4 class="page-con">
+                    每一个牛逼的互联网公司都会有属于自己的一套前端框架,我们虽然目前不是一家牛逼的企业，但是我们正在走向牛逼的道路上。为此我们觉得应该做点什么，于是它就产生了——TreeBear UI框架
+                    （以下简称TreeBear UI）。<br/>
+                    TreeBear UI吸取了比如：BooBootsrap、Amaze UI、jQuery UI、Semantic UI等一大批国内外优秀的资源。最后希望大家一起不断完善，尽早服务于我们的网站甚至更多。
+                </h4>
+            </div>
+            <div class="bs-docs-section">
+                <h1 id="tables" class="page-header">使用</h1>
+                <h4 class="page-con">TreeBear UI
+                    提供以下几种方式帮你快速上手，每一种方式针对具有不同技能等级的开发者和不同的使用场景。继续阅读下面的内容，看看哪种方式适合你的需求吧。</h4>
+
+                <p>引用</p>
+                <!--代码-->
+    <pre>
+    <!--  TreeBear UI 核心 CSS 文件 -->
+    <link data-remove="false" rel="stylesheet" href="http://qianduan.treebear.cn/ui/build/ui/0.0.1/treeBear-ui.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script data-remove="false" src="http://qianduan.treebear.cn/ui/common/jquery.min.js"></script>
+    <!--  TreeBear UI 核心 JavaScript 文件 -->
+    <script data-remove="false" src="http://qianduan.treebear.cn/ui/build/ui/0.0.1/treeBear-ui.min.js"></script>
+    </pre>
+                <!--/代码-->
+            </div>
+            <div class="bs-docs-section">
+                <h1 id="tables" class="page-header">获取TreeBear UI</h1>
+
+                <h3 class="page-con mb5">1.下载文件</h3>
+                <a type="button" class="tbui-btn tbui-btn-success tbui-radius"
+                   href="http://qianduan.treebear.cn/ui/build/ui/0.0.1/treeBear-ui.min.css" target="_blank">
+                    <i class="icon-download-alt"></i>
+                    下载TreeBear UI v0.0.1 (CSS)
+                    <i class="icon-external-link"></i>
+                </a>
+                <a type="button" class="tbui-btn tbui-btn-primary tbui-radius"
+                   href="http://qianduan.treebear.cn/ui/build/ui/0.0.1/treeBear-ui.min.js" target="_blank">
+                    <i class="icon-download-alt"></i>
+                    下载TreeBear UI v0.0.1 (JS)
+                    <i class="icon-external-link"></i>
+                </a>
+
+                <h3 class="page-con mt20 mb5">2.获取源码</h3>
+                <a type="button" class="tbui-btn tbui-btn-default tbui-radius"
+                   href="https://github.com/Hancoson/treeBear-UI" target="_blank">
+                    <i class="icon-github"></i>
+                    Start
+                    <i class="icon-external-link"></i>
+                </a>
+            </div>
+            <div class="bs-docs-section">
+                <h1 id="tables" class="page-header">目录结构</h1>
+                <h4 class="page-con">TreeBear UI 框架目录结构。</h4>
+                <img src="http://s0.witown.com/upload/20150211/merchant/25048/dfbbf/25048dfbbf26425b92a8cd73533bda10.png"/>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <a href="http://www.hancoson.com" target="_blank">Hancoson</a> &copy; 2015
+</footer>
+<a href="javascript:void(0);" title="回到顶部" class="tbui-btn-goTop" id="TB_goTop">
+    <i class="icon-arrow-up"></i>
+</a>
+</body>
+<script type="text/javascript" src="public/scripts/prettify.js" charset="UTF-8"></script>
+<script type="text/javascript" src="public/scripts/jquery.nav.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="public/scripts/common.js" charset="UTF-8"></script>
+</html>

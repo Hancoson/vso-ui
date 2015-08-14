@@ -1,2 +1,3 @@
-# vso-ui
-VSO UI 前端框架
+# kw-home
+kw-home
+'grunt dist'

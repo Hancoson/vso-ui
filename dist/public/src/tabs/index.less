@@ -1,0 +1,54 @@
+/*
+@ tabs
+*/
+
+.tbui-tabs {
+    width: 100%;
+    overflow: hidden;
+    .tbui-tabs-nav {
+        height: 40px;
+        border-bottom: 1px solid @gray-lighter;
+        border-left: 1px solid @gray-lighter;
+        width: 100%;
+        li {
+            height: 40px;
+            line-height: 38px;
+            float: left;
+            border: 1px solid @gray-lighter;
+            border-left: none;
+            margin-bottom: -1px;
+            background: @gray-lighter;
+            overflow: hidden;
+            position: relative;
+            a {
+                display: block;
+                padding: 0 40px;
+                outline: none;
+                color: @gray-dark;
+                text-decoration: none;
+                &:hover {
+                    background: @gray-lighter;
+                    color: @gray
+                }
+            }
+        }
+        .tbui-active a:hover {
+            background: @white;
+            border-bottom: 1px solid @white;
+        }
+        .tbui-active {
+            background: @white;
+            border-bottom: 1px solid @white;
+            border-top: 3px solid @global-primary;
+            line-height: 34px
+        }
+    }
+}
+.tbui-tabs-conbox {
+    border: 1px solid @gray-lighter;
+    border-top: none;
+    .tbui-tabs-panel {
+        display: none;
+        padding: 20px
+    }
+}

@@ -1,0 +1,77 @@
+/*
+ @ reset
+*/
+html{-webkit-text-size-adjust:none;}
+html, body, div, span, applet, object, iframe, table, caption, 
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, 
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend { 
+    vertical-align: baseline; 
+    font-family: @font-family; 
+    font-weight: inherit; 
+    font-style: inherit; 
+    font-size: @global-font-size; 
+    outline: 0; 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+} 
+:focus { 
+    outline: 0; 
+} 
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+body { 
+    background: @body-bg; 
+    line-height: @global-line-height; 
+    color: @text-color; 
+} 
+ol, ul { 
+    list-style: none; 
+} 
+table { 
+    border-collapse: separate; 
+    border-spacing: 0; 
+} 
+caption, th, td { 
+    font-weight: normal; 
+    text-align: left; 
+} 
+blockquote:before, blockquote:after, q:before, q:after { 
+    content: “”; 
+} 
+blockquote, q { 
+    quotes: “” “”; 
+}
+a,a:hover{
+    text-decoration:none; 
+}
+.clearfix:after {content: "."; display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.fr{
+    float: right
+}
+.fl{
+    float: left
+}
+.font12{
+    font-size: 12px
+}
+.font14{
+    font-size: 14px
+}
+.font16{
+    font-size: 16px
+}
+.font18{
+    font-size: 18px
+}
